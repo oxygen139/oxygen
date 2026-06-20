@@ -1,0 +1,11 @@
+<html><body style="background:black; color:white; text-align:center; font-size:2em; margin-top:20vh;">
+<input type="password" id="pw" placeholder="输入密码" style="font-size:1em;">
+<button onclick="check()" style="font-size:1em;">🔓</button>
+<div id="msg" style="margin-top:1em; white-space:pre-line;"></div>
+<script>
+function check(){
+  if(document.getElementById('pw').value==='382342'){
+    document.getElementById('msg').innerHTML='好想和<span style="color:red;">你</span>一直一起。'.replace('想','<span style="color:red;">想</span>');
+  }else{alert('密码不对哦');}
+}
+</script></body></html>
